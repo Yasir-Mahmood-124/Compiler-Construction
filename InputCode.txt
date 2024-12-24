@@ -1,0 +1,52 @@
+int a;
+    int b;
+    int c;
+    bool isCheck;
+    isCheck = true;
+
+    a = 10;
+    b = 5;
+
+    // Arithmetic operations
+    c = a + b;
+    c = c - b;
+    c = a * b;
+    c = a / b;
+
+    // Conditional statements
+    if (a > b) {
+        c = a - b;
+    } else {
+        c = b - a;
+    }
+
+    // Loops
+    while (c > 0) {
+        c = c - 1;
+    }
+
+    // Function definition
+    func myFunction() {
+        int x;
+        x = 42;
+        return x;
+    }
+
+    // Boolean operations
+    bool flag;
+    flag = true;
+    if (flag) {
+        a = 100;
+    }
+
+    // Switch statement
+    int choice;
+    choice = 2;
+    switch (choice) {
+        case 1:
+            a = 10;
+        case 2:
+            b = 20;
+        case 3:
+            c = 30;
+    }

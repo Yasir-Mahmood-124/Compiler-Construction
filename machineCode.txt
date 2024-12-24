@@ -1,0 +1,70 @@
+MOV isCheck, true
+MOV a, 10
+MOV b, 5
+ADD t0, a, b
+MOV c, t0
+SUB t1, c, b
+MOV c, t1
+MUL t2, a, b
+MOV c, t2
+DIV t3, a, b
+MOV c, t3
+CMP a, b
+MOV t5, t4
+CMP t5, 0
+JNE L1
+JMP L2
+L1:
+SUB t6, a, b
+MOV c, t6
+JMP L3
+L2:
+SUB t7, b, a
+MOV c, t7
+L3:
+CMP c, 0
+MOV t9, t8
+L1:
+CMP t9, 0
+JNE L2
+JMP L3
+L2:
+SUB t10, c, 1
+MOV c, t10
+MOV t9, t8
+JMP L1
+L3:
+FUNC myFunction:
+MOV x, 42
+MOV R0, x
+RET
+END myFunction
+MOV flag, true
+MOV t11, flag
+CMP t11, 0
+JNE L1
+JMP L2
+L1:
+MOV a, 100
+L2:
+MOV choice, 2
+MOV t12, choice
+CMP t12, 0
+JNE 1
+JMP L13
+L1:
+MOV a, 10
+JMP L13
+CMP t12, 0
+JNE 2
+JMP L13
+L2:
+MOV b, 20
+JMP L13
+CMP t12, 0
+JNE 3
+JMP L13
+L3:
+MOV c, 30
+JMP L13
+L13:
